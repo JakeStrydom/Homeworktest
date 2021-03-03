@@ -4,13 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]--> 
+
+    <title>SEO, Reputation management, Social media marketing</title>
 </head>
 
+
 <body>
+    <!-- Here is the main header that is used across all the pages of the website -->
+
     <div class="header">
         <h1>Hori<span class="seo">seo</span>n</h1>
         <div>
+            <!--Navigation bar-->
+            <nav>
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -22,11 +33,14 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
+        </nav>
         </div>
     </div>
+
     <div class="hero"></div>
+    <main>
     <div class="content">
-        <div class="search-engine-optimization">
+        <div id="search-engine-optimization" class="search-engine-optimization">
             <img src="./assets/images/search-engine-optimization.jpg" alt="" class="float-left" />
             <h2>Search Engine Optimization</h2>
             <p>
@@ -70,13 +84,17 @@
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
         </div>
+    </main>
+     <!-- And here is the main footer that is used across all the pages of the website -->
+     <footer>
     </div>
     <div class="footer">
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
+            2019 Horiseon Social Solution Services, Inc.
         </p>
     </div>
+</footer>
 </body>
 
 </html>
